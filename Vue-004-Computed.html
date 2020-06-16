@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Conditional Directive, v-if -->
+    <div id="app">
+        <h3>Contoh 1:</h3>
+        <p v-if="show1"> {{ pesan1 }}</p>
+        <br>
+        <h3>Contoh 2:</h3>
+        <p v-if="show2"> {{ pesan1 }}</p>
+        <br>
+        <h3>Contoh 3:</h3>
+        <p v-if="show3 == 'siap'"> {{ pesan1 }}</p>
+        <br>
+        <h3>Contoh 4:</h3>
+        <p v-if="show2"> {{ pesan2 }}</p>
+        <p v-else="show2"> {{ pesan1 }}</p>
+        <br>
+        <h3>Contoh 5:</h3>
+        <p v-if="show2"> {{ pesan2 }}</p>
+        <p v-else="show2"> {{ pesan1 }}</p>
+        <p>Result from {{ int1 }} + {{ int2 }} is {{ sum }}</p>
+    </div>
+
+
+    <!-- add Vue.js -->
+    <script src="Vue/vue.js"></script>
+    <script src="Vue-004-Computed.js"></script>
+</body>
+
+</html>
