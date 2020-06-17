@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="app">
+        <!-- v-on EvenHandler -->
+        <button v-on:click="pesan = 'di kilik v-on:klik nya'">Klik</button>
+        <button @click="pesan = 'di kilik @click nya'">Klik me</button>
+        <button @click="showAlert">Show Alert</button>
+        <br> {{ pesan }}
+
+    </div>
+
+
+    <!-- add Vue.js -->
+    <script src="Vue/vue.js"></script>
+    <script src="Vue-013-v-on_EventHandler.js"></script>
+</body>
+
+</html>
