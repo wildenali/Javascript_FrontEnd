@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="app">
+        <!-- v-model in Textbox -->
+        <input type="text" v-model="pesan1">
+        <br> {{ pesan1 }}
+        <p>----------------------------------------------------------------------------------------------------</p>
+        <br>
+        <br>
+        <!-- v-model in Textbox -->
+        <textarea cols="30" rows="10" v-model="iniTextarea"></textarea>
+        <br>
+        <pre>{{ iniTextarea }}</pre>
+        <p>----------------------------------------------------------------------------------------------------</p>
+        <br>
+        <br>
+        <!-- v-model in RadioButton -->
+        <input type="radio" v-model="iniRadioButton" value="pilih1">Pilihan 1
+        <br>
+        <input type="radio" v-model="iniRadioButton" value="pilih2">Pilihan 2
+        <br>
+        <h3>Anda Memilih: {{ iniRadioButton }}</h3>
+        <p>----------------------------------------------------------------------------------------------------</p>
+        <br>
+        <br>
+        <!-- v-model in CheckBox -->
+        <input type="checkbox" v-model="iniCheckBox" value="cilok">CILOK
+        <br>
+        <input type="checkbox" v-model="iniCheckBox" value="cimol">CIMOL
+        <br>
+        <input type="checkbox" v-model="iniCheckBox" value="cireng">CIRENG
+        <br>
+        <h3>Raw Data dari CheckBox: {{ iniCheckBox }}</h3>
+        <h3>Pilih CI:</h3>
+        <ul>
+            <li v-for="choice in iniCheckBox">{{ choice }}</li>
+        </ul>
+        <p>----------------------------------------------------------------------------------------------------</p>
+        <br>
+        <br>
+    </div>
+
+
+    <!-- add Vue.js -->
+    <script src="Vue/vue.js"></script>
+    <script src="Vue-010-v-model_in_CheckBox.js"></script>
+</body>
+
+</html>
