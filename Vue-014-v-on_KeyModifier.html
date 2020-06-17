@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="app">
+        <!-- v-on Key Modifier -->
+        <label for="">Press Tombol Enter</label>
+        <input type="text" v-on:keyup.enter="pesan1 = 'You pressing tombol enter'">
+        <br>
+        <label for="">Press Any Key</label>
+        <input type="text" @keyup.esc="escKey" @keyup.space="spaceKey" @keyup.up="upKey" @keyup.down="downKey" @keyup.65="aKey">
+        <br> {{ pesan1 }}
+
+    </div>
+
+
+    <!-- add Vue.js -->
+    <script src="Vue/vue.js"></script>
+    <script src="Vue-014-v-on_KeyModifier.js"></script>
+</body>
+
+</html>
