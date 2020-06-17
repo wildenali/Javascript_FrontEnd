@@ -3,7 +3,7 @@ var app = new Vue({
     el: '#app', // el itu element
     data: {
         content: '',
-        vehicles: ['car', 'motorsycle', 'bike'],
+        vehicles: ['bike', 'car', 'motorsycle'],
     },
     methods: {
         addVehicle: function() {

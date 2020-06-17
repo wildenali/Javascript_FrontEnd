@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="app">
+        <!-- Passing Data -->
+        <blog-post v-for="post in posts" :key="post.id" :post="post"></blog-post>
+    </div>
+
+
+    <!-- add Vue.js -->
+    <script src="Vue/vue.js"></script>
+    <script src="Vue-019-PassingDataComponent.js"></script>
+
+</body>
+
+</html>

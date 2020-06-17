@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="app">
+        <!-- Object Array -->
+        <ul>
+            <li v-for="vehicle in vehicles">
+                Type: {{ vehicle.type }}, Brand: {{ vehicle.brand }}, Color: {{ vehicle.color }}
+            </li>
+        </ul>
+        <br>
+        <ul>
+            <li v-for="value in object">
+                {{ value }}
+            </li>
+        </ul>
+
+
+    </div>
+
+
+    <!-- add Vue.js -->
+    <script src="Vue/vue.js"></script>
+    <script src="Vue-016-ObjectArray.js"></script>
+
+</body>
+
+</html>

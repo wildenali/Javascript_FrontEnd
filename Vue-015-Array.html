@@ -14,6 +14,7 @@
         <!-- Array -->
         <ul>
             <li>{{ vehicles[0] }}</li>
+            <li>{{ vehicles[2] }}</li>
         </ul>
         <br>
         <ul>
@@ -26,7 +27,15 @@
         <br>
         <input type="text" v-model="content">
         <button @click="addVehicle">Add</button>
+
         <br>
+        <br>
+
+        <ul>
+            <li v-for="(vehicle,index) in vehicles">
+                <button @click="removeVehicle(index)">X</button> {{ vehicle }}
+            </li>
+        </ul>
 
     </div>
 
