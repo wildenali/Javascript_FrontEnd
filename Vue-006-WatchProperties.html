@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Conditional Directive, v-if -->
+    <div id="app">
+        <h3>Contoh 1:</h3>
+        <p v-if="show1"> {{ pesan1 }}</p>
+        <p>Result PERTAMA from {{ int1 }} + {{ int2 }} is {{ result1 }}</p>
+        <button v-on:click="sumProcess1">Prosess 1</button>
+        <br> <br>
+        <p>Result KEDUA from {{ int1 }} + {{ int2 }} + SESUATU is {{ result2 }}</p>
+        <button v-on:click="sumProcess2(5)">Prosess 2</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- watch properties -->
+        <input type="text" v-model="kilometers">
+        <input type="text" v-model="meters">
+    </div>
+
+
+    <!-- add Vue.js -->
+    <script src="Vue/vue.js"></script>
+    <script src="Vue-006-WatchProperties.js"></script>
+</body>
+
+</html>
