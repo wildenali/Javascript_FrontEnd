@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="app">
+        <!-- Array -->
+        <ul>
+            <li>{{ vehicles[0] }}</li>
+        </ul>
+        <br>
+        <ul>
+            <li v-for="vehicle in vehicles">
+                {{ vehicle }}
+            </li>
+        </ul>
+        <br>
+        <label for="">Add Vehicle</label>
+        <br>
+        <input type="text" v-model="content">
+        <button @click="addVehicle">Add</button>
+        <br>
+
+    </div>
+
+
+    <!-- add Vue.js -->
+    <script src="Vue/vue.js"></script>
+    <script src="Vue-015-Array.js"></script>
+</body>
+
+</html>
