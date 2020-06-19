@@ -42,12 +42,14 @@ export default {
 <style scoped>
 .title-header {
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .logos-wrapper {
     width: 52%;
     overflow: hidden;
     margin: auto;
+    /* background-color: red; */
 }
 
 .item-logos {
