@@ -1,22 +1,19 @@
 import React, {Component, Fragment} from 'react';
 import './React_007_ProductParentChild.css'
+import React_007_ProductParentChild_CardProduct from '../React_007_ProductParentChild_CardProduct/React_007_ProductParentChild_CardProductFile';
 
 class React_007_ProductParentChild extends Component {
     state = {
-        order: 4
+        order: 0,
+        name: 'wilden'
     }
-    handlePlus = () => {
+
+    handleOnCounterBerubah = (newValue) => {
         this.setState({
-            order: this.state.order + 1
+            order: newValue
         })
     }
-    handleMinus = () => {
-        if(this.state.order > 0) {
-            this.setState({
-                order: this.state.order - 1
-            })
-        }
-    }
+
     render() {
         return (
             <Fragment>
@@ -29,18 +26,7 @@ class React_007_ProductParentChild extends Component {
                         <div className="count">{this.state.order}</div>
                     </div>
                 </div>
-                <div className="card">
-                    <div className="img-thumb-prod">
-                        <img src="https://selerasa.com/wp-content/uploads/2015/12/images_daging_ayam-panggang-bumbu-spesial.jpg" alt="product_image"/>
-                    </div>
-                    <p className="product-title">Ayam goreng bakar rebus</p>
-                    <p className="product-price">Rp. 25,000</p>
-                    <div className="counter">
-                        <button className="minus" onClick={this.handleMinus}>-</button>
-                        <input type="text" value={this.state.order}/>
-                        <button className="plus" onClick={this.handlePlus}>+</button>
-                    </div>
-                </div>
+                <React_007_ProductParentChild_CardProduct onCounterBerubah={ (value) => this.handleOnCounterBerubah(value)} />
             </Fragment>
         );
     }
