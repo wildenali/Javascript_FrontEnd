@@ -17,6 +17,7 @@ import React_006_YoutubeComp from './component/React_006_YoutubeComp/React_006_Y
 
 // -------------------- React_006_YoutubeComp_Home_File --------------------
 import React_006_YoutubeComp_Home from './container/React_006_YoutubeHome/React_006_Youtube_Home_File'
+import React_008_LifeCycleComp from './container/React_008_LifeCycleComp/React_008_LifeCycleCompFile';
 // -------------------- React_006_YoutubeComp_Home_File --------------------
 
 
@@ -112,6 +113,9 @@ ReactDOM.render(
     <React_006_YoutubeComp_Home />
     {/* // -------------------- React_006_YoutubeComp_Home_File -------------------- */}
 
+    {/* // -------------------- React_008_LifeCycleCompFile -------------------- */}
+    <React_008_LifeCycleComp />
+    {/* // -------------------- React_008_LifeCycleCompFile -------------------- */}
 
   </React.StrictMode>,
   document.getElementById('root')

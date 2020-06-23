@@ -1,0 +1,13 @@
+.tombol {
+    padding: 10px 36px;
+    border: 1px solid purple;
+    border-radius: 4px;
+    outline: none;
+    background: royalblue;
+    color: red;
+    font-size: 16px;
+}
+
+.tombol:hover {
+    cursor: pointer;
+}
