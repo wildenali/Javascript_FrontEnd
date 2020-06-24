@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import AgetPost from './A_Pemanggilan_API_GET/A_getPosts';
+import BgetPostsFakeAPI from './B_Fake_API/B_getPostsFakeAPI';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AgetPost />
+    {/* <AgetPost /> */}
+    <BgetPostsFakeAPI />
   </React.StrictMode>,
   document.getElementById('root')
 );
