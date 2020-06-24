@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import AgetPost from './A_Pemanggilan_API_GET/A_getPosts';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AgetPost />
   </React.StrictMode>,
   document.getElementById('root')
 );
