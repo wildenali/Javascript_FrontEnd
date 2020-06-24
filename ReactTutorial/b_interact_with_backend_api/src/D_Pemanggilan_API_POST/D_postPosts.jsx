@@ -42,21 +42,11 @@ class DpostPosts extends Component {
         })
     }
 
-    // function delete
-    handleDelete = (data) => {
-        console.log(data);
-        axios.delete(`http://localhost:3004/posts/${data}`).then((res) => {
-            console.log(res);
-            this.getPostAPI();
-        })
-    }
-
     // ketika input atau form itu berubah
     handleFormChange = (event) => {
         // console.log('Form Berubah');
         // console.log(event);
         // console.log(event.target);
-
         let formBlogPostNew = {...this.state.formBlogPost};
         // console.log('init state: ', this.state.formBlogPost);
         // console.log('new value: ', formBlogPostNew);
@@ -67,11 +57,6 @@ class DpostPosts extends Component {
         console.log(event.target.name);
         formBlogPostNew[event.target.name] = event.target.value
         
-        // this.setState({
-        //     formBlogPost: formBlogPostNew
-        // }, () => {
-        //     console.log('nilai obj formBlogPost ', this.state.formBlogPost)
-        // })
         this.setState({
             formBlogPost: formBlogPostNew
         })
@@ -102,7 +87,7 @@ class DpostPosts extends Component {
                 </div>
                 {
                     this.state.post.map(post => {
-                        return <DpostPostsStateless key={post.id} data={post} hapus={this.handleDelete}/>
+                        return <DpostPostsStateless key={post.id} data={post}/>
                     })
                 }
             </Fragment>
