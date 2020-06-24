@@ -1,0 +1,100 @@
+.section-title {
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #9a6F54;
+}
+
+.post {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 500px;
+    padding: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    border-bottom: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.img-thumb {
+    width: 200px;
+    height: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img-thumb img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.content {
+    flex: 1;
+}
+
+.content p.title {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3d4a6e;
+    margin-bottom: 10px;
+}
+
+.content p.desc {
+    margin: 15px;
+    font-size: 15px;
+    color: #3dfa6e;
+}
+
+.hapus {
+    padding: 12px 18px;
+    background: red;
+    color: white;
+    outline: none;
+    margin-top: 10px;
+}
+
+.hapus:hover {
+    cursor: pointer;
+}
+
+.form-add-post {
+    box-shadow: 0px  0px 16px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin-left: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+}
+
+.form-add-post label {
+    display: block;
+    font-size: 14px;
+    color: rosybrown;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-add-post input, .form-add-post textarea {
+    outline: none;
+    border: 1px solid blueviolet;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: grey;
+}
+
+button.btn-simpan {
+    outline: none;
+    border: 1px solid violet;
+    padding: 10px 30px;
+    color: darkblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
