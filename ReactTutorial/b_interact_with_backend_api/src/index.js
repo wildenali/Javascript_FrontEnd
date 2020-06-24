@@ -6,13 +6,15 @@ import AgetPost from './A_Pemanggilan_API_GET/A_getPosts';
 import BgetPostsFakeAPI from './B_Fake_API/B_getPostsFakeAPI';
 import CdeletePosts from './C_Pemanggilan_API_DELETE/C_deletePosts';
 import DpostPosts from './D_Pemanggilan_API_POST/D_postPosts';
+import EputPosts from './E_Pemanggilan_API_PUT/E_putPosts';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <AgetPost /> */}
     {/* <BgetPostsFakeAPI /> */}
     {/* <CdeletePosts /> */}
-    <DpostPosts />
+    {/* <DpostPosts /> */}
+    <EputPosts />
   </React.StrictMode>,
   document.getElementById('root')
 );
